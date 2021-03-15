@@ -1,0 +1,53 @@
+@import "./variable";
+
+.toolbar {
+  display: inline-block;
+  position: fixed;
+  top: 9vh;
+  width: 4.5rem;
+  z-index: 999;
+  left: 2rem;
+  text-align: center;
+  button, input {
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(242,242,242,0.98);
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  button {
+    border-radius: 50px ;
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+    &.active {
+      background-color: #000;
+      svg {
+        path {
+          fill: #fff
+        }
+      }
+    }
+  }
+  .square {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+
+.disabled {
+  cursor: not-allowed!important;
+  svg {
+    path {
+      fill: #ccc
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "./variable";
+
+
+
+
+
+canvas {
+  display: block;
+  border: 1px solid black;
+  background-color: white;
+  cursor: crosshair;
+}
+textarea {
+  background: none;
+  outline: none;
+  resize: none;
+  display: block;
+  transform-origin: 0px 0px 0px;
+  position: absolute;
+}
